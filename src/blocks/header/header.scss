@@ -7,28 +7,18 @@
   height: 180px;
   font-family: $font-second;
 
-  .header__logo {
+  &__logo {
     width: 60px;
     height: 60px;
     background-image: url("/src/images/header-logo.svg");
   }
 
-  .header__search {
+  &__search {
     width: 530px;
     height: $height-basic;
     border: 2px solid $color-grey;
     border-radius: 5px;
     box-sizing: $box-sizing;
     margin-left: $margin-left;
-  }
-
-  .button_place_header {
-    height: $height-basic;
-    width: 105px;
-    border-radius: 3px;
-    background-color: $color-white;
-    color: $color-black;
-    padding: 0;
-    box-sizing: $box-sizing;
   }
 }

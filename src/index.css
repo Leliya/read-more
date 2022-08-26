@@ -28,12 +28,12 @@
   height: 180px;
   font-family: "Helvetica Neue OTS", Helvetica, Arial, sans-serif;
 }
-.header .header__logo {
+.header__logo {
   width: 60px;
   height: 60px;
   background-image: url("/src/images/header-logo.svg");
 }
-.header .header__search {
+.header__search {
   width: 530px;
   height: 40px;
   border: 2px solid rgba(255, 255, 255, 0.8);
@@ -41,13 +41,30 @@
   box-sizing: border-box;
   margin-left: 20px;
 }
-.header .button_place_header {
-  height: 40px;
-  width: 105px;
+
+.button {
   border-radius: 3px;
   background-color: #ffffff;
   color: #000000;
   padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+.button_place_header {
+  height: 40px;
+  width: 105px;
+}
+.button_place_main {
+  height: 50px;
+  width: 260px;
+  font-size: 20px;
+}
+.button_place_articles {
+  height: 40px;
+  width: 260px;
+  background-color: #000000;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
   box-sizing: border-box;
 }
 
