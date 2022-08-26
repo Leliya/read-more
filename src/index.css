@@ -7,7 +7,8 @@
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 160px 560px 160px 1fr;
-  grid-template-areas: ". header header header ." ". . buttons . ." ". main main main ." ". . footer . .";
+  grid-template-rows: 180px 130px 300px 1fr;
+  grid-template-areas: ". header header header ." ". main main main ." ". main main main ." ". . footer . .";
   margin: 0;
   padding: 0;
   font-family: "HelveticaNeueCyr", Helvetica, Arial, sans-serif;
@@ -25,7 +26,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 180px;
   font-family: "Helvetica Neue OTS", Helvetica, Arial, sans-serif;
 }
 .header__logo {
@@ -54,7 +54,7 @@
   height: 40px;
   width: 105px;
 }
-.button_place_main {
+.button_place_buttons {
   height: 50px;
   width: 260px;
   font-size: 20px;
@@ -66,6 +66,20 @@
   color: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(255, 255, 255, 0.8);
   box-sizing: border-box;
+}
+
+.buttons {
+  width: 560px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /*# sourceMappingURL=index.css.map */

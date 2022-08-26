@@ -1,6 +1,8 @@
 //import logo from './logo.svg';
 //import "./App.css";
 import Header from "./Header";
+import Main from "./Main";
+
 
 function App() {
   return (
@@ -9,10 +11,10 @@ function App() {
       {/*<Switch>
       <Route exact path="/">
           <Presentation />
-        </Route>
-        <Route exact path="/profile">
+  </Route>
+        <Route exact path="/profile">*/}
           <Main />
-        </Route>
+        {/*</Route>
         <Route path="/articles">
           <AllArticles />
         </Route>
