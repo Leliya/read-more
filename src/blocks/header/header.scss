@@ -5,6 +5,7 @@
   justify-content: space-between;
   align-items: center;
   height: 180px;
+  font-family: $font-second;
 
   .header__logo {
     width: 60px;
@@ -17,6 +18,8 @@
     height: $height-basic;
     border: 2px solid $color-grey;
     border-radius: 5px;
+    box-sizing: $box-sizing;
+    margin-left: $margin-left;
   }
 
   .button_place_header {
@@ -26,5 +29,6 @@
     background-color: $color-white;
     color: $color-black;
     padding: 0;
+    box-sizing: $box-sizing;
   }
 }
