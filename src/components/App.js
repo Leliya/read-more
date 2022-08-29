@@ -2,6 +2,7 @@
 //import "./App.css";
 import Header from "./Header";
 import Main from "./Main";
+import Footer from "./Footer";
 
 
 function App() {
@@ -24,10 +25,10 @@ function App() {
         <Route path="/sign-in">
           <Login />
         </Route>
-      </Switch>
+      </Switch>*/}
       <Footer />
-      <FormAddArticle />
-      <PopupConfirmDelete /> */}
+      {/* <FormAddArticle />
+      <PopupConfirmDelete />  */}
     </div>
   );
 }

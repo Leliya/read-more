@@ -1,10 +1,12 @@
 @import '../src/vendor/normalize.css';
 @import '../src/vendor/fonts/font.css';
 
-
 @import 'variables';
 @import '../src/blocks/page/page.scss';
 @import '../src/blocks/header/header.scss';
 @import '../src/blocks/button/button.scss';
 @import '../src/blocks/buttons/buttons.scss';
 @import '../src/blocks/main/main.scss';
+@import '../src/blocks/articles-last/articles-last.scss';
+@import '../src/blocks/article/article.scss';
+@import '../src/blocks/footer/footer.scss';

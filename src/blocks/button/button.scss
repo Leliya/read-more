@@ -8,11 +8,13 @@
   &_place_header {
     height: $height-basic;
     width: 105px;
+    line-height: 1.2;
   }
   &_place_buttons {
     height: $height-basic + 10px;
     width: 260px;
     font-size: $font-xl;
+    line-height: 1;
   }
   &_place_articles{
     height: $height-basic;
@@ -21,5 +23,6 @@
     color: $color-grey;
     border: 1px solid $color-grey;
     box-sizing: $box-sizing;
+    line-height: 1;
   }
 }
