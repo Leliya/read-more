@@ -21,7 +21,7 @@ class Tag(models.Model):
                             validators=[validators.validate_slug],)
 
     class Meta:
-        ordering = ['-name']
+        ordering = ['-id']
         verbose_name = 'Тег'
         verbose_name_plural = 'Теги'
 
@@ -70,6 +70,7 @@ class Favorite(models.Model):
         on_delete=models.CASCADE,
         null=True,
         verbose_name='Пользователь',
+        related_name = 'favorites'
     )
 
     post = models.ForeignKey(

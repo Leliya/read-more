@@ -33,7 +33,7 @@ class PostReadSerializer(serializers.ModelSerializer):
         """Проверка - находится ли пост в избранном."""
         request = self.context.get('request')
         return (request and request.user.is_authenticated
-                and request.user.favorites.filter(recipe=obj).exists())
+                and request.user.favorites.filter(post=obj).exists())
 
 
 class PostWriteSerializer(serializers.ModelSerializer):
