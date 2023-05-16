@@ -1,0 +1,44 @@
+@use '../../variables.scss' as *;
+
+.box {
+  background-color: $color-white;
+  width: $width-form;
+  grid-area: main;
+  margin: auto;
+  padding: 50px 40px 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-family: $font-basic;
+    font-weight: 700;
+    font-size: $font-xl;
+    color: $color-black;
+    margin: 0 0 50px;
+  }
+  &__caption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #7b7b7b;
+    margin-top: 30px;
+  }
+  &__link {
+    margin-left: 5px;
+    text-decoration: none;
+    color: #000;
+    transition: color 0.2s ease;
+  }
+}
+
+.form {
+  width: 100%;
+  &__fieldset {
+    border: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+}

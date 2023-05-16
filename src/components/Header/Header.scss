@@ -1,0 +1,17 @@
+@use '../../variables.scss' as *;
+
+.header {
+  grid-area: header;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // height: 180px;
+  font-family: $font-second;
+
+  &__logo {
+    width: 60px;
+    height: 60px;
+    background-image: url("../../images/header-logo.svg");
+  }
+}

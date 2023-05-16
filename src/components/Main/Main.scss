@@ -1,0 +1,16 @@
+@use '../../variables.scss' as *;
+
+.main{
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttons{
+  width: $width-centr-block;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
