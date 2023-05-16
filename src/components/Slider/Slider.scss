@@ -1,0 +1,41 @@
+@use "sass:math";
+@use '../../variables.scss' as *;
+
+.articles-last{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 300px;
+  justify-content: space-between;
+  align-items: center;
+  &__title{
+    font-family: $font-basic;
+    font-weight: 700;
+    font-size: $font-xl;
+    color: $color-white;
+    width: $width-centr-block;
+    margin: 0;
+    text-align: center;
+  }
+  &__slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+  }
+  &__arrow{
+    top: math.div($height-article, 2) - 18px;
+    position: absolute;
+    width: 43px;
+    height: 36px;
+    background-image: url("../../images/slider-arrow-right.svg");
+  }
+  &__arrow_type_right{
+    right: -80px;
+  }
+  &__arrow_type_left{
+    left: -80px;
+    transform: rotate(180deg);
+  }
+}

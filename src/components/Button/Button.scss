@@ -1,0 +1,48 @@
+@use '../../variables.scss' as *;
+
+.button {
+  border: none;
+  border-radius: 3px;
+  background-color: $color-white;
+  color: $color-black;
+  padding: 0;
+  box-sizing: $box-sizing;
+  font-weight: 400;
+
+  &_place_header {
+    height: $height-basic;
+    width: 160px;
+    line-height: 1.5;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: $font-l;
+    line-height: $height-basic;
+  }
+  &_place_buttons {
+    height: $height-basic + 10px;
+    width: 260px;
+    font-size: $font-xl;
+    line-height: 1;
+  }
+  &_place_articles {
+    height: $height-basic;
+    width: 260px;
+    background-color: $color-black;
+    color: $color-grey;
+    border: 1px solid $color-grey;
+    box-sizing: $box-sizing;
+    line-height: 1;
+  }
+  &_place_auth {
+    margin-top: 20px;
+    border-radius: 10px;
+    height: $height-basic;
+    width: 80%;
+    background-color: $color-black;
+    color: $color-white;
+    box-sizing: $box-sizing;
+    font-size: $font-l;
+    line-height: 1;
+  }
+}

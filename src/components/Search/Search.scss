@@ -1,0 +1,22 @@
+@use '../../variables.scss' as *;
+
+.search {
+  width: 580px;
+  height: $height-basic;
+  margin: 0;
+  padding: 0;
+  &__input {
+    width: 100%;
+    height: 100%;
+    background-color: $color-black;
+    border: 2px solid $color-grey;
+    border-radius: 5px;
+    box-sizing: $box-sizing;
+    &::placeholder{
+      padding-left: 15px;
+      color: #817A7A;
+      font-size: $font-l;
+      font-family: $font-second;
+    }
+  }
+}
