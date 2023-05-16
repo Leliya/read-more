@@ -26,7 +26,7 @@ class PostViewSet(viewsets.ModelViewSet):
     permission_classes = (AuthorOrReadOnly,)
 
     def get_serializer_class(self):
-        if self.request.method in ('POST', 'PUT', 'PATCH'):
+        if self.request and self.request.method in ('POST', 'PUT', 'PATCH'):
             return PostWriteSerializer
         return PostReadSerializer
 
