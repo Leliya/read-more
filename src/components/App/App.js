@@ -2,6 +2,7 @@ import "./App.scss"
 import { Route, Routes } from "react-router-dom";
 import { Board } from "../../pages/Board/Board";
 import { Login } from "../../pages/Login/Login";
+import { Register } from "../../pages/Register/Register";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Board/>}/>
         <Route path="/sign-in" element={<Login/>}/>
+        <Route path="/sign-up" element={<Register/>}/>
       </Routes>
       {/*<Switch>
       <Route exact path="/">
